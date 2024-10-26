@@ -36,7 +36,7 @@ function NewsTable( {newsData, newsHeaderTitle} ) {
             {newsData.slice(0,3).map((news, i) => (
               <td key={i}>
                 <p ID={`${styles.newsTitle}`}>
-                  {news.title.length > 200 ? `${news.title.slice(0, 200)}...` : news.title}
+                  {news.title.length > 150 ? `${news.title.slice(0, 150)}...` : news.title}
                 </p>
                 <p ID={`${styles.newsSummary}`}>{news.summary}</p>
                 <p>
@@ -60,7 +60,7 @@ function NewsTable( {newsData, newsHeaderTitle} ) {
             {newsData.slice(3,6).map((news, i) => (
                 <td key={i+3}>
                   <p ID={`${styles.newsTitle}`}>
-                    {news.title.length > 200 ? `${news.title.slice(0, 200)}...` : news.title}
+                    {news.title.length > 150 ? `${news.title.slice(0, 150)}...` : news.title}
                   </p>
                   <p ID={`${styles.newsSummary}`}>{news.summary}</p>
                   <p>
@@ -84,7 +84,7 @@ function NewsTable( {newsData, newsHeaderTitle} ) {
             {newsData.slice(6,9).map((news, i) => (
                 <td key={i+3}>
                   <p ID={`${styles.newsTitle}`}>
-                    {news.title.length > 200 ? `${news.title.slice(0, 200)}...` : news.title}
+                    {news.title.length > 150 ? `${news.title.slice(0, 150)}...` : news.title}
                   </p>
                   <p ID={`${styles.newsSummary}`}>{news.summary}</p>
                   <p>
